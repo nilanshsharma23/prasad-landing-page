@@ -4,7 +4,8 @@ const props = defineProps({
 });
 
 const getImageURL = (path) => {
-    return new URL(path, import.meta.url).href
+    const fullPath = `../assets/${path}`
+    return new URL(fullPath, import.meta.url).pathname
 }
 
 console.log(getImageURL("screenshots/1.png"));
