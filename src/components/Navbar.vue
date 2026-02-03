@@ -5,7 +5,9 @@ import RouterNavbarItem from "./RouterNavbarItem.vue";
 
 <template>
   <nav class="p-8 pl-16 pr-16 flex justify-between items-center fixed w-screen">
-    <img src="@/assets/logo.svg" alt="" class="h-16" />
+    <RouterLink to="/">
+      <img src="@/assets/logo.svg" alt="" class="h-16" />
+    </RouterLink>
     <ul class="hidden md:flex">
       <RouterNavbarItem content="Home" route="/" />
       <RouterNavbarItem content="About" route="/" />
