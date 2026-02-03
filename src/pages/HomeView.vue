@@ -1,5 +1,5 @@
 <script setup>
-import AboutSection from "@/components/AboutSection.vue";
+import HomeSection from "@/components/HomeSection.vue";
 import MainFooter from "@/components/MainFooter.vue";
 import Navbar from "@/components/Navbar.vue";
 // import gsap from "gsap";
@@ -15,9 +15,10 @@ import Navbar from "@/components/Navbar.vue";
 
 <template>
   <Navbar />
-  <AboutSection title="Find Free Food." subtitle="Prasad can help you find bhandaras near your location."
+  <div class="h-32"></div>
+  <HomeSection title="Find Free Food." subtitle="Prasad can help you find bhandaras near your location."
     imagePath="screenshots/1.png" />
-  <AboutSection title="Do a good deed." subtitle="Prasad can also help you host a bhandara." :reverse="true"
+  <HomeSection title="Do a good deed." subtitle="Prasad can also help you host a bhandara." :reverse="true"
     imagePath="screenshots/2.png" />
   <MainFooter />
 </template>

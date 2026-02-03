@@ -1,3 +1,4 @@
+import AboutView from "@/pages/AboutView.vue";
 import HomeView from "@/pages/HomeView.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -8,6 +9,11 @@ const router = createRouter({
       path: "/",
       component: HomeView,
       name: "Prasad - Bhandara Tracker",
+    },
+    {
+      path: "/about",
+      component: AboutView,
+      name: "About - Prasad",
     },
   ],
 });
