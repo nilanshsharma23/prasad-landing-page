@@ -1,12 +1,7 @@
 <script setup>
 const props = defineProps({
-    title: String, subtitle: String, imagePath: String, reverse: Boolean = false,
+    title: String, subtitle: String, reverse: Boolean = false,
 });
-
-const getImageURL = (path) => {
-    const fullPath = `../assets/${path}`
-    return new URL(fullPath, import.meta.url).pathname
-}
 </script>
 
 <template>
@@ -25,7 +20,7 @@ const getImageURL = (path) => {
                 </div>
             </div>
             <div class="flex flex-row justify-center h-screen items-center gap-2">
-                <img :src="getImageURL(imagePath)" alt="" class="border-secondary border-2 rounded-2xl h-162.75">
+                <img src="@/assets/screenshots/2.png" alt="" class="border-secondary border-2 rounded-2xl h-162.75">
             </div>
         </div>
         <div v-else class="flex flex-col xl:flex-row justify-around items-center">
@@ -42,7 +37,7 @@ const getImageURL = (path) => {
                 </div>
             </div>
             <div class="flex flex-row justify-center h-screen items-center gap-2">
-                <img :src="getImageURL(imagePath)" alt="" class="border-secondary border-2 rounded-2xl h-162.75">
+                <img src="@/assets/screenshots/1.png" alt="" class="border-secondary border-2 rounded-2xl h-162.75">
             </div>
         </div>
     </div>
