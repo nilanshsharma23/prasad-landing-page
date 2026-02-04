@@ -7,19 +7,18 @@ const getImageURL = (path) => {
     const fullPath = `../assets/${path}`
     return new URL(fullPath, import.meta.url).pathname
 }
-
-console.log(getImageURL("screenshots/1.png"));
 </script>
 
 <template>
     <div class="p-12 min-h-225">
-        <div v-if="reverse" class="flex flex-row-reverse justify-around items-center">
+        <div v-if="reverse" class="flex flex-row-reverse justify-around items-center" id="home-section">
             <div class="flex flex-col gap-2">
                 <div class="text-text-primary text-7xl font-bold">{{ title }}</div>
                 <div class="text-text-primary text-3xl">{{ subtitle }}</div>
                 <div class="flex flex-row gap-4">
                     <a href="#" class="p-4 pl-8 pr-8 bg-primary rounded-4xl text-xl font-bold">Download Now</a>
-                    <RouterLink to="/" class="p-4 pl-8 pr-8 bg-card-background rounded-4xl text-xl text-text-primary">
+                    <RouterLink to="/about"
+                        class="p-4 pl-8 pr-8 bg-card-background rounded-4xl text-xl text-text-primary">
                         Know
                         More
                     </RouterLink>
@@ -35,7 +34,8 @@ console.log(getImageURL("screenshots/1.png"));
                 <div class="text-text-primary text-3xl">{{ subtitle }}</div>
                 <div class="flex flex-row gap-4">
                     <a href="#" class="p-4 pl-8 pr-8 bg-primary rounded-4xl text-xl font-bold">Download Now</a>
-                    <RouterLink to="/" class="p-4 pl-8 pr-8 bg-card-background rounded-4xl text-xl text-text-primary">
+                    <RouterLink to="/about"
+                        class="p-4 pl-8 pr-8 bg-card-background rounded-4xl text-xl text-text-primary">
                         Know
                         More
                     </RouterLink>

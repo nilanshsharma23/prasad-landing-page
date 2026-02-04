@@ -15,7 +15,6 @@ import Navbar from "@/components/Navbar.vue";
 
 <template>
   <Navbar />
-  <div class="h-32"></div>
   <HomeSection title="Find Free Food." subtitle="Prasad can help you find bhandaras near your location."
     imagePath="screenshots/1.png" />
   <HomeSection title="Do a good deed." subtitle="Prasad can also help you host a bhandara." :reverse="true"
