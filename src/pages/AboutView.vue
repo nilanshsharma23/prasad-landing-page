@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar.vue';
 
 <template>
     <Navbar />
-    <img src="@/assets/covers/bhandara-horizontal.png" alt="" class="min-w-480 fixed z-[-1] opacity-50">
+    <img src="@/assets/covers/bhandara-horizontal.jpg" alt="" class="min-w-480 fixed z-[-1] opacity-50">
     <div
         class="h-screen flex justify-end items-start p-24 flex-col bg-linear-to-t from-black via-transparent to-transparent">
         <div class="text-7xl font-bold text-text-primary">About Us</div>
