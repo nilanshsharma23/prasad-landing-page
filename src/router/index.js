@@ -13,7 +13,7 @@ const router = createRouter({
     {
       path: "/about",
       component: AboutView,
-      name: "About - Prasad",
+      name: "About | Prasad",
     },
   ],
 });
