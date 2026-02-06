@@ -1,4 +1,5 @@
 import AboutView from "@/pages/AboutView.vue";
+import DeleteAccoutView from "@/pages/DeleteAccoutView.vue";
 import HomeView from "@/pages/HomeView.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -14,6 +15,11 @@ const router = createRouter({
       path: "/about",
       component: AboutView,
       name: "About | Prasad",
+    },
+    {
+      path: "/delete-account",
+      component: DeleteAccoutView,
+      name: "Delete Prasad Account",
     },
   ],
 });
